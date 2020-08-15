@@ -1,0 +1,28 @@
+doctype
+html
+    | {% include head %}
+    body.ajax-loading
+      | {% include header %}
+      .page
+        .page__content
+          section.intro
+            .wrap
+              | {% if page.teaser  %}
+              img(src="{{ site.baseurl }}{{ page.teaser }}")
+              | {% endif %}
+              h2 {{ page.title }}
+              | {% if page.site %}
+              a(href="{{ page.site }}")
+                i.fab.fa-globe
+              | {% endif %}
+              | {% if page.instagram %}
+              a(href="https://instagram.com/{{ page.instagram }}")
+                i.fab.fa-instagram
+              | {% endif %}
+              | {% if page.twitter %}
+              a(href="https://twitter.com/{{ page.twitter }}")
+                i.fab.fa-twitter
+              | {% endif %}
+
+          | {% assign projects = site.projects %}
+          | {% include project_grid %}

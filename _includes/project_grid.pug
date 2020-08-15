@@ -1,0 +1,31 @@
+section.listing
+  .content-wrap.listing-wrap
+    .grid-sizer
+    | {% for project in projects %}
+    | {% if project.url != page.url %}
+    .listing-item
+      .listing-item__image
+        img(src="{{ site.baseurl }}{{ project.teaser }}")
+      .listing-item__content.listing-item__content--bottom
+        a.listing-item__link(href="{{ project.link }}")
+        .listing-item__info
+          a(href="{{ project.link }}")
+            h2.listing-item__title
+              | {{ project.title }}
+          .flex-center
+            | {% if project.site %}
+            a.flex-item-spaced(href="{{ project.site }}")
+              i.fas.fa-globe-africa.black
+            | {% endif %}
+            | {% if project.instagram %}
+            a.flex-item-spaced(href="https://instagram.com/{{ project.instagram }}")
+              i.fab.fa-instagram.black
+            | {% endif %}
+            | {% if project.twitter %}
+            a.flex-item-spaced(href="https://twitter.com/{{ project.twitter }}")
+              i.fab.fa-twitter.black
+            | {% endif %}
+
+        
+    | {% endif %}
+    | {% endfor %}

@@ -1,0 +1,53 @@
+section {
+    margin-bottom: 50px;
+}
+.class-link {
+    color:#AAAAAA;
+}
+
+.listing-item__info a {
+    position: relative;
+    z-index: 1;
+}
+
+.listing-item__link {
+    top:    0;
+    right:  0;
+    bottom: 0;
+    left:   0;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    position: absolute;
+    z-index: 0;
+}
+
+.black {
+    color: black;
+}
+
+.black:hover {
+    color: #4ccda6;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.flex-center a:not(:first-child) {
+    margin-left: 0.5rem;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width:768px) {
+    .page-about {
+        height: 50vh;
+    }
+}
