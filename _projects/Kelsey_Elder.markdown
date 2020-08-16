@@ -1,4 +1,5 @@
 ---
+layout: project
 title: Kelsey Elder
 teaser: assets/img/Kelsey_Elder/00.jpg
 link: https://loweredcase.github.io/generativeType-letterMatter/

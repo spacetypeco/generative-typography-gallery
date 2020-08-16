@@ -1,4 +1,5 @@
 ---
+layout: project
 title: Candice Botelho
 teaser: assets/img/Candice_Botelho/00.gif
 link: https://editor.p5js.org/candicebotelho/present/-NCJu6Qrb
