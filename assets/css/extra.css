@@ -110,3 +110,18 @@ section {
     -o-animation: fadeInUp 1s; /* Opera < 12.1 */
     animation: fadeInUp 1s;
 }
+
+.listing-item__title {
+    font-size: 1rem;
+}
+
+@media only screen and (min-width:768px) {
+ .listing-item__title {
+  font-size:24px
+ }
+}
+@media only screen and (min-width:1220px) {
+ .listing-item__title {
+  font-size:28px
+ }
+}
