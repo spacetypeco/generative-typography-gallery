@@ -5,5 +5,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
       ul.appendChild(ul.children[Math.random() * i | 0]);
     }
   }
+
+  var script = document.createElement('script');
+  script.src="/assets/js/orange-mountain.js"
+  document.head.appendChild(script)
 });
 
