@@ -4,6 +4,7 @@ section.listing
     | {% for project in projects %}
     | {% if project.url != page.url %}
     .listing-item
+      a.touch-only.listing-item__link(href="{{ project.url }}")
       .listing-item__image
         img(src="{{ site.baseurl }}{{ project.teaser }}")
       .listing-item__content.listing-item__content--bottom

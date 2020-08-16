@@ -1,0 +1,39 @@
+doctype
+html
+    | {% include head %}
+    body.ajax-loading
+      | {% include header %}
+      .page
+        .page__content
+          section.intro
+            .wrap
+              | {% if page.teaser  %}
+              img(src="{{ site.baseurl }}{{ page.teaser }}")
+              | {% endif %}
+              p
+                a(href="{{ page.link }}")
+                  i.fas.fa-external-link-alt.black
+                  |  View Sketch
+              hr
+              h2 {{ page.title }}
+              | {% if page.site %}
+              p
+                a(href="{{ page.site }}")
+                  i.fas.fa-globe-africa.black
+                  |  Portfolio Website
+              | {% endif %}
+              | {% if page.instagram %}
+              p
+                a.flex-item-spaced(href="https://instagram.com/{{ page.instagram }}")
+                  i.fab.fa-instagram.black
+                  |  Instagram
+              | {% endif %}
+              | {% if page.twitter %}
+              p
+                a.flex-item-spaced(href="https://twitter.com/{{ page.twitter }}")
+                  i.fab.fa-twitter.black
+                  |  Twitter
+              | {% endif %}
+
+          | {% assign projects = site.projects %}
+          | {% include project_grid %}

@@ -73,6 +73,36 @@ section {
     }
 }
 
+@media (hover: none) {
+    .touch-only {
+        display: block;
+    }
+
+    .listing-item .listing-item__content {
+        display: none;
+    }
+}
+
+@media (hover: hover) {
+    .touch-only {
+        display: none;
+    }
+    
+    .listing-item:hover .listing-item__content {
+        opacity:1;
+        visibility:visible
+    }
+
+    .listing-item:hover .listing-item__info {
+        opacity:1;
+        -moz-transform:translate(0,0);
+        -o-transform:translate(0,0);
+        -ms-transform:translate(0,0);
+        -webkit-transform:translate(0,0);
+        transform:translate(0,0)
+    }
+}
+
 .fadeUp {
     -webkit-animation: fadeInUp 1s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadeInUp 1s; /* Firefox < 16 */
