@@ -1061,8 +1061,7 @@ section {
   font-size:30px
  }
 }
-@media only screen and (min-width:768px) {
- .menu {
+.menu {
   position:absolute;
   top:50%;
   right:22px;
@@ -1071,7 +1070,6 @@ section {
   -ms-transform:translate(0,-50%);
   -webkit-transform:translate(0,-50%);
   transform:translate(0,-50%)
- }
 }
 .menu__toggle {
  position:absolute;
@@ -1164,7 +1162,6 @@ section {
  -o-transition:all .2s ease-in-out;
  transition:all .2s ease-in-out
 }
-@media only screen and (min-width:768px) {
  .menu__wrap {
   position:relative;
   background:0 0;
@@ -1177,7 +1174,6 @@ section {
   -o-transition:none;
   transition:none
  }
-}
 .menu--open .menu__wrap {
  visibility:visible;
  opacity:1
@@ -1187,14 +1183,11 @@ section {
  margin:0 auto;
  padding:20px 20px
 }
-@media only screen and (min-width:768px) {
  .menu__list {
   max-width:none;
   margin:0;
   padding:0
  }
-}
-@media only screen and (min-width:768px) {
  .menu__list__item {
   display:inline-block;
   margin-left:20px
@@ -1202,7 +1195,6 @@ section {
  .menu__list__item:first-child {
   margin-left:0
  }
-}
 .menu__list__item__link {
  font-size:30px;
  font-weight:500;
@@ -1212,7 +1204,6 @@ section {
 .menu__list__item__link:hover {
  color:#2A2F36
 }
-@media only screen and (min-width:768px) {
  .menu__list__item__link {
   padding:0 0 3px;
   font-size:14px;
@@ -1221,7 +1212,6 @@ section {
  .menu__list__item__link:hover {
   color:#4ccda6
  }
-}
 @media only screen and (min-width:1220px) {
  .menu__list__item__link {
   font-size:15px
