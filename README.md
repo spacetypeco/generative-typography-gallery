@@ -34,7 +34,7 @@ CSS changes should go into `assets/css/extra.css`; JS changes should go into fil
 When you're done making changes, go back to your terminal and generate the static website with this command:
 
 ```
-jekyll build -d docs
+bundle exec jekyll build -d docs
 ```
 
 and push it up to Github:

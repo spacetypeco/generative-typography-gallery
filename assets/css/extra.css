@@ -26,6 +26,11 @@ section {
     z-index: 0;
 }
 
+.listing-item__image img {
+    width: 100%;
+}
+
+
 .black {
     color: black;
 }
