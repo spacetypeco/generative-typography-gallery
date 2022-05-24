@@ -45,4 +45,4 @@ jobs:
       - name: Install ghp-import
         run: pip install ghp-import
 
-      - run: ghp-import -p -f -m "Update site to ${{ github.sha }}" site
+      - run: ghp-import -p -f -m "Update site to ${{ github.sha }}" docs
