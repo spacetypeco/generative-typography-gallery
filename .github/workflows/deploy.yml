@@ -25,7 +25,13 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
 
-     # Use GitHub Deploy Action to build and deploy to Github
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 14
+
+      - run: npm install -g pug
+
+      # Use GitHub Deploy Action to build and deploy to Github
       - uses: jeffreytse/jekyll-deploy-action@v0.3.1
         with:
           provider: 'github'
