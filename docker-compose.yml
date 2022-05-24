@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  site:
+    build:
+      context: .
+    container_name: site
+    platform: linux/amd64
+    ports:
+      - "4000:4000"
+    volumes:
+      - ".:/site"
